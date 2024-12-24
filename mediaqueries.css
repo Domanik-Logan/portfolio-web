@@ -1,0 +1,116 @@
+@media screen and (max-width: 1200px) {
+    #desktop-nav {
+        display: none;
+    }
+    #hamburger-nav {
+        display: flex;
+    }
+}
+
+
+@media (max-width: 320px) {
+    body {
+        font-size: 12px;
+    }
+    
+
+    .sectionContainer {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 0 0.25rem;
+        justify-content: center;
+    }
+
+    .aboutPic {
+        max-width: 100%;
+        max-height: 200px;
+    }
+
+    .aboutDetails {
+        width: 100%;
+        margin-top: 1rem;
+        text-align: center;
+    }
+
+    .detailsContainer {
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 10%;
+        max-width: 80%;
+        width: 100%;
+        text-align: center;
+    }
+
+    .sectionTextP1 {
+        font-size: 12px;
+    }
+
+    .sectionTextP2,
+    .title {
+        font-size: 16px;
+    }
+
+    .btnContainer {
+        margin-left: auto;
+        margin-right: auto;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+        padding-left: 25%;
+    }
+
+    .nav-links {
+        font-size: 12px;
+    }
+
+
+    #profile {
+        padding-top: 5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        gap: 1rem;
+        height: auto;
+    }
+
+    .sectionPic {
+        width: 80%;
+        max-width: 150px;
+        height: auto;
+        border-radius: 50%;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    .sectionPic img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .sectionText {
+        text-align: center;
+        justify-content: center;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .sectionTextP1, .sectionTextP2, .title {
+        font-size: 1.2em;
+    }
+
+    #experience {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        gap: 1rem;
+        height: auto;
+    }
+}
+

@@ -1,0 +1,1 @@
+My name is Domanik, as stated previously I am a computer science student at Oregon State University. I have a focus in Game and simulation development. I have experiece with many programming languages. This has led me into working on projects where I create relational databases, image editors, cloud application, and most recently a simulation of semi-conductor clean rooms.

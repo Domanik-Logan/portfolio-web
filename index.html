@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <div id="imageOverlay">
+        <img src="./assets/star.jpg" alt="Overlay Image">
+    </div>
+    <div class="overlay"></div>
+    <nav id="desktop-nav">
+        <div class="logo">
+            <img src="./assets/logo.png" alt="Domanik Logan Logo">
+        </div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">
+            <img src="./assets/logo.png" alt="Domanik Logan Logo">
+        </div>
+        <div class="hamMenu">
+            <div class="hamIcon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="sectionPic">
+            <img src="./assets/IMG_1777.jpg" alt="profilePic">
+        </div>
+        <div class="sectionText">
+            <p class="sectionTextP1">Hello, I'm</p>
+            <h1 class="title" id="name">Domanik Logan</h1>
+            <span id="cursor"></span>
+            <p class="sectionTextP2">Computer Science Student</p>
+            <div class="btnContainer">
+                <button class="btn btnColor2" onclick="window.open('./assets/DomLogan Resume_v5.pdf')">
+                    Download CV
+                </button>
+                <button class="btn btnColor1" onclick="location.href='./#contact'">
+                    Contact Info
+                </button>
+            </div>
+            <div id="socialsContainer">
+                <img src="./assets/linkedin.png" alt="linkedin" class="icon" onclick="location.href='https://www.linkedin.com/in/domanik-logan-41a323233/'">
+                <img src="./assets/github.png" alt="github" class="icon" onclick="location.href='https://github.com/Domanik-Logan/'">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="sectionTextP1">Get To know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="sectionContainer">
+            <div class="aboutPic">
+                <img src="./assets/0001-0120.gif" alt="donut" class="aboutPic">
+            </div>
+            <div class="aboutDetails">
+                <div class="aboutContainer">
+                    <div class="detailsContainer">
+                        <img src="./assets/experience.png" alt="experience Icon" class="icon">
+                        <h3>Experience</h3>
+                        <p>5+ years <br> Customer Service</p>
+                    </div>
+                    <div class="detailsContainer">
+                        <img src="./assets/education.png" alt="education Icon" class="icon">
+                        <h3>Education</h3>
+                        <p>B.S Computer Science  <br>est. June 2025 </p>
+                    </div>
+                </div>
+                <div class="textContainer">
+                    <p id="aboutText">Loading...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="experience">
+        <p class="sectionTextP1">Explore my</p>
+        <h1 class="title">Experience</h1>
+    
+        <div class="sectionContainer">
+            <div class="experienceDetails">
+                <div class="detailsContainer projectDetailsContainer">
+                    <h2 class="experienceTitle">Merchandiser</h2>
+                    <p class="experienceDate">Aug 2024 - Nov 2024</p>
+                    <p class="experienceLocation">Franz Bakery, 3455 Del Webb Ave NE, Salem, OR 97301</p>
+                    <div class="detailsContent">
+                        <p class="pDetails">Efficiently organized product displays and stock rotation while meeting tight deadlines and maintaining high standards.</p>
+                    </div>
+                    <div class="contactInfo" onclick="copyToClipboard('Franz Bakery, 3455 Del Webb Ave NE, Salem, OR 97301')">
+                        <span>Copy Contact Info</span>
+                    </div>
+                </div>
+    
+                <div class="detailsContainer projectDetailsContainer">
+                    <h2 class="experienceTitle">Cashier</h2>
+                    <p class="experienceDate">Aug 2022 - Jul 2024</p>
+                    <p class="experienceLocation">OSUBeaverStore, 663 SW 26th St, Corvallis, OR 97331</p>
+                    <div class="detailsContent">
+                        <p class="pDetails">Excelled in customer service by addressing client inquiries and ensuring accurate and efficient order processing.</p>
+                    </div>
+                    <div class="contactInfo" onclick="copyToClipboard('OSUBeaverStore, 663 SW 26th St, Corvallis, OR 97331')">
+                        <span>Copy Contact Info</span>
+                    </div>
+                </div>
+    
+                <div class="detailsContainer projectDetailsContainer">
+                    <h2 class="experienceTitle">Deli Member</h2>
+                    <p class="experienceDate">Sep 2021 - May 2022</p>
+                    <p class="experienceLocation">Safeway, 450 SW 3rd St, Corvallis, OR 97333</p>
+                    <div class="detailsContent">
+                        <p class="pDetails">Collaborated with team members to maintain high standards of service while completing daily tasks efficiently.</p>
+                    </div>
+                    <div class="contactInfo" onclick="copyToClipboard('Safeway, 450 SW 3rd St, Corvallis, OR 97333')">
+                        <span>Copy Contact Info</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <p class="sectionTextP1">Explore my</p>
+        <h1 class="title">Projects</h1>
+        <div class="sectionContainer">
+            <div class="projectContainer">
+                <div class="detailsContainer projectDetailsContainer">
+                    <h2 class="projectTitle">GCP Tarpaulin Tool</h2>
+                    <div class="detailsContent">
+                        <p class="pDetails">This is a project where I use Google Cloud App Engine to create a website that manages a website. It includes a Postman environment and utilizes OAuth 2.0 for CRUD operations on a school database.</p>
+                        <a class="githubButton" href="https://github.com/Domanik-Logan/Domanik-Logan/tree/main/GCP" target="_blank">View on GitHub</a>
+                    </div>
+                </div>
+                <div class="detailsContainer projectDetailsContainer">
+                    <h2 class="projectTitle">Relational Database</h2>
+                    <div class="detailsContent">
+                        <p class="pDetails">This is a project, where using mysql, I attempted to recreate a netflix relational database.  </p>
+                        <a class="githubButton" href="https://github.com/Domanik-Logan/Domanik-Logan/tree/main/cs340-group24-main" target="_blank">View on GitHub</a>
+                    </div>
+                </div>
+                <div class="detailsContainer projectDetailsContainer">
+                    <h2 class="projectTitle">Image Viewer and Editor</h2>
+                    <div class="detailsContent">
+                        <p class="pDetails">This is a python project, that creates an executable. We made an image editor, where you can manipulate the image data. It has file saving capabilities, and you can even convert images to other types of images.</p>
+                        <a class="githubButton" href="https://github.com/MrF1ow/Image_Viewer_Editor" target="_blank">View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <p class="sectionTextP1">Here is my </p>
+        <h1 class="title">Contact Information</h1>
+        <div class="sectionContainer">
+            <div class="contactContainer">
+                <div class="detailsContainer">
+                    <h2 class="email" onclick="copyToClipboard('domaniklogan2002@gmail.com')">Email</h2>
+                    <div id="socialsContainer">
+                        <img src="./assets/linkedin.png" alt="linkedin" class="icon" onclick="location.href='https://www.linkedin.com/in/domanik-logan-41a323233/'">
+                        <img src="./assets/github.png" alt="github" class="icon" onclick="location.href='https://github.com/Domanik-Logan/'">
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
